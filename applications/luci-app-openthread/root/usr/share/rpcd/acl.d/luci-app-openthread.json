@@ -6,6 +6,7 @@
 				"luci.openthread": [
 					"state_summary",
 					"neighbors_summary",
+					"routers_summary",
 					"scan"
 				]
 			}

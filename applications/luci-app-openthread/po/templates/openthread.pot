@@ -1,208 +1,226 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8"
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1123
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1246
+msgid "%d routers in the mesh, %d of them linked directly to this one."
+msgstr ""
+
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1182
+msgid "(cost %d)"
+msgstr ""
+
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1128
 msgid "(pending)"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:174
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:179
 msgid "(sleepy)"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:457
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1215
+msgid "(this device)"
+msgstr ""
+
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:462
 msgid "16 hex characters"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:353
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:358
 msgid "32 hex characters"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1025
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1030
 msgid "Accept traffic from"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1069
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1074
 msgid "Accept traffic from this device again"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:494
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:748
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:499
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:753
 msgid "Add"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:617
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:622
 msgid "Add Address"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:737
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:742
 msgid "Add Joiner in Network: %s"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1061
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1066
 msgid "Add this device to the allowlist"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:485
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:490
 msgid "Address length must be 16 hex characters"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1188
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1291
 msgid ""
 "Admit a new device into this Thread network (commissioner-based joining)"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1091
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1109
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1128
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1096
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1114
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1133
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1192
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1221
 msgid "Age"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1028
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1059
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1033
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1064
 msgid "Allow"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1024
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1029
 msgid "Allow device"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:451
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:456
 msgid "Allowlist"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:658
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:663
 msgid ""
 "An allowlist with no entries admits no device, so every device is blocked "
 "until entries are added. Continue?"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:387
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:392
 msgid "Attach"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1098
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1103
 msgid "Average / last received signal"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:797
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:802
 msgid "Bitrate"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:995
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1014
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1050
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1056
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1074
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1000
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1019
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1055
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1061
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1079
 msgid "Block"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:991
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1010
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:996
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1015
 msgid "Block device"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:382
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:743
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:758
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:954
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:387
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:748
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:763
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:959
 msgid "Cancel"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:692
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:697
 msgid "Cannot change mode while the Thread network is started."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:239
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:687
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:794
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:244
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:692
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:799
 msgid "Channel"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:627
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:632
 msgid "Channel must be a number between 11 and 26"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:161
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:169
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:166
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:174
 msgid "Child"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:478
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:483
 msgid "Clear"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1186
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1289
 msgid "Commission device…"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:812
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:817
 msgid "Create"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:813
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:818
 msgid "Create a new Thread network"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:924
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:935
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:929
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:940
 msgid "Data Version"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:770
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:775
 msgid "Delete"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:755
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:760
 msgid "Delete Thread network"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:882
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:887
 msgid "Delete this network"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:452
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:457
 msgid "Denylist"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:160
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:165
 msgid "Detached"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:450
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:871
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1179
+msgid "Direct"
+msgstr ""
+
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:455
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:876
 msgid "Disable"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:877
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:882
 msgid "Disable this network"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:159
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:164
 msgid "Disabled"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:337
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:702
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:342
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:707
 msgid "Dismiss"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:878
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:883
 msgid "Edit"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:879
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:884
 msgid "Edit this network"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:864
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:869
 msgid "Enable"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:870
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:875
 msgid "Enable this network"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:376
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:381
 msgid "Enter the network key to ensure you join the right network."
 msgstr ""
 
@@ -210,29 +228,31 @@ msgstr ""
 msgid "Error: %s"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:613
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:618
 msgid "Existing Address"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1088
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1106
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1125
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1093
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1111
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1130
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1189
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1218
 msgid "Extended MAC"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:689
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:694
 msgid "Extended PAN ID"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:633
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:638
 msgid "Extended PAN ID must be 16 hex characters"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:810
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:815
 msgid "Find and join a Thread network"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:781
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:786
 msgid "Generic MAC 802.15.4 Thread"
 msgstr ""
 
@@ -240,359 +260,391 @@ msgstr ""
 msgid "Grant access to OpenThread Border Router controls"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1087
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1105
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1124
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1092
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1110
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1129
 msgid "Host"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:263
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:268
 msgid "Join Network"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:326
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:331
 msgid "Join Network: Thread Scan"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1123
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1128
 msgid "Joiner"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:371
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:376
 msgid "Joining Network: %q"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:163
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1179
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:168
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1282
 msgid "Leader"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:921
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:932
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:926
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:937
 msgid "Leader Router Id"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:695
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:700
 msgid "Left empty the key stays as it is."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1100
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1105
 msgid "Link quality"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:845
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1190
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1219
+msgid "Link quality (in / out)"
+msgstr ""
+
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1209
+msgid "Link quality to and from this router"
+msgstr ""
+
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:850
 msgid "Link quality to the parent router"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:698
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:703
 msgid "MAC-Filter"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:690
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1244
+msgid "Mesh routers"
+msgstr ""
+
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:695
 msgid "Mode"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:636
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:641
 msgid "Mode must consist of \"r\", \"s\", \"d\", \"n\""
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1183
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1286
 msgid "Neighbors"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:854
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:920
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:931
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1085
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1103
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1121
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:859
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:925
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:936
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1090
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1108
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1126
 msgid "Network"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:685
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:690
 msgid "Network Configuration"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:378
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:694
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:383
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:699
 msgid "Network Key"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:238
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:243
 msgid "Network Name"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:696
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:701
 msgid "Network Password"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:360
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:640
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:365
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:645
 msgid "Network key length must be 32 hex characters"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:643
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:648
 msgid "Network password length must be 32 hex characters"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:738
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:743
 msgid "New Joiner Credential"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:901
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:906
 msgid ""
 "No Thread network is configured yet. Create a new network or scan for one to "
 "join."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:941
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1146
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:946
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1151
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1228
 msgid "No information available"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:847
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:852
 msgid "No mesh neighbors"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:270
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:275
 msgid "No networks found"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1101
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1106
 msgid "No signal information"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:847
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1210
+msgid "Not a direct radio neighbour"
+msgstr ""
+
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:852
 msgid "Not attached"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:199
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:204
 msgid ""
 "Nothing was changed: an active allowlist with no entries blocks every "
 "device. Clear it from the network settings, where the affected list is "
 "shown, or change the filter mode first."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:200
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:205
 msgid ""
 "Nothing was changed: the MAC filter list still holds entries from an earlier "
 "list, which this mode would give the opposite meaning. Review the MAC filter "
 "in the network settings."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:201
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:206
 msgid "Nothing was changed: the current MAC filter state could not be read."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:203
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:208
 msgid ""
 "Nothing was changed: the request would also switch the filter mode on, which "
 "changes what every other device may do. Change the mode from the network "
 "settings, where the effect is spelled out."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:374
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:379
 msgid ""
 "One agent manages exactly one Thread network: joining this network replaces "
 "the currently configured one."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:688
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:856
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:693
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:861
 msgid "PAN ID"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:630
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:635
 msgid "PAN ID must be a number"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:240
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:245
 msgid "PAN Id"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:922
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:933
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:927
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:938
 msgid "Partition Id"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:699
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1191
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1220
+msgid "Path"
+msgstr ""
+
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:704
 msgid "Protocol"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1089
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1107
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1126
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1094
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1112
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1131
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1188
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1217
 msgid "RLOC16"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:442
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:447
 msgid "Read this value from the border router"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:526
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:880
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1139
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:531
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:885
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1144
 msgid "Remove"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1058
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1063
 msgid "Remove this device from the allowlist and stop accepting its traffic"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:803
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:808
 msgid "Restart"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:806
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:811
 msgid "Restart the Thread interface"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:740
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:745
 msgid "Restrict to a Specific Joiner"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:434
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:439
 msgid "Reveal"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:855
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1086
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1104
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1122
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:860
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1091
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1109
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1127
 msgid "Role"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:162
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:170
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1179
+msgid "Routed"
+msgstr ""
+
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:167
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:175
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1187
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1213
 msgid "Router"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1089
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1094
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1188
 msgid ""
 "Routing Locator: the mesh-internal short address encoding router and child id"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:501
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:506
 msgid "Save & Apply"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:809
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:814
 msgid "Scan"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:691
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:696
 msgid ""
 "Set the thread device mode value, must consist of \"r\", \"s\", \"d\", \"n\"."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:237
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:242
 msgid "Signal"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1090
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1108
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1127
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1095
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1113
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1132
 msgid "Signal (avg / last)"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:251
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:256
 msgid "Signal: %d dBm / Quality: %s"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:925
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:936
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:930
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:941
 msgid "Stable Data Version"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:320
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:325
 msgid "Starting Thread scan..."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:992
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1011
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:997
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1016
 msgid "Stop accepting traffic from"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1076
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1081
 msgid "Stop accepting traffic from this device"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:843
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:848
 msgid "Strongest neighbor: average / last RSSI"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:739
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:744
 msgid ""
 "The Joiner Credential is a device-specific string of all uppercase "
 "alphanumeric characters (0-9 and A-Y, excluding I, O, Q and Z), with a "
 "length between 6 and 32 characters."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:723
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:728
 msgid ""
 "The Joiner Credential must be 6 to 32 uppercase alphanumeric characters (0-9 "
 "and A-Y, excluding I, O, Q and Z)"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:469
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:474
 msgid ""
 "The MAC filter is an active allowlist. Clearing it leaves no device "
 "admitted, which blocks every device until the filter mode is changed. Clear "
 "it anyway?"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:976
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:981
 msgid ""
 "The MAC filter is currently off on this border router. Blocking this device "
 "also switches it to denylist mode, a router-wide setting that from then on "
 "decides which devices are refused."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:651
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:656
 msgid ""
 "The MAC filter list holds %d entries written for the previous mode. "
 "Switching the mode changes what they mean: %s. Continue?"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:583
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:588
 msgid "The MAC filter state could not be read, so it cannot be changed."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1049
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1054
 msgid "The MAC filter state could not be read."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:697
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:702
 msgid "The commissioner credential (PSKc). Left empty it stays as it is."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:506
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:511
 msgid "The filter list could not be read."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:202
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:207
 msgid "The filter list was edited, but the filter mode could not be changed."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:456
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:461
 msgid "The filter mode could not be read."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:756
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:761
 msgid ""
 "This deletes the network \"%h\" from this border router: the operational "
 "dataset and all Thread configuration are erased and devices on the mesh lose "
 "their network. This cannot be undone."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1027
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1032
 msgid ""
 "This does not commission the device: joining the network still requires its "
 "credentials. The filter list is kept in memory and does not survive a border "
 "router restart."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:979
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:984
 msgid ""
 "This is not an eviction: Thread has no operation to remove a device from a "
 "network. The device keeps the network credentials, drops out of this router "
@@ -601,7 +653,7 @@ msgid ""
 "restarts."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:616
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:621
 msgid "This will clear all existing macfilter addresses."
 msgstr ""
 
@@ -609,101 +661,101 @@ msgstr ""
 msgid "Thread"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:686
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:691
 msgid "Thread Name"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:684
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:689
 msgid "Thread Network: %s (%s)"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1175
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1278
 msgid "Thread Overview"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:693
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:698
 msgid "Thread Security"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:838
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:859
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:843
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:864
 msgid "Thread is disabled"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1091
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1096
 msgid "Time since this device was last heard from"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:981
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:986
 msgid ""
 "To remove a device for good, change the network key from the network "
 "settings, which requires commissioning every other device again."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1065
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1070
 msgid "Unblock"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:449
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:454
 msgid "Unknown"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:741
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:746
 msgid ""
 "Use the device's factory-assigned IEEE EUI-64 to restrict commissioning to a "
 "specific Joiner. Use \"*\" to allow any joiner."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:923
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:934
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:928
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:939
 msgid "Weighting"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:135
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:140
 msgid "disabled"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:727
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:732
 msgid "eui64 length must be 16 hex characters or \"*\""
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:256
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:261
 msgid "hidden"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1026
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1031
 msgid "on this border router by adding it to the allowlist."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1012
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:1017
 msgid "on this border router by removing it from the allowlist."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:993
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:998
 msgid "on this border router."
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:789
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:794
 msgid "otbr-agent is not reachable (%s)"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:656
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:661
 msgid "the filter stops applying and none of them is filtered any more"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:655
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:660
 msgid "they become blocked devices"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:653
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:658
 msgid "they become the only admitted devices and every other device is blocked"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:425
 #: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:430
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:435
 msgid "unchanged"
 msgstr ""
 
-#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:255
+#: applications/luci-app-openthread/htdocs/luci-static/resources/view/openthread/overview.js:260
 msgid "unknown"
 msgstr ""

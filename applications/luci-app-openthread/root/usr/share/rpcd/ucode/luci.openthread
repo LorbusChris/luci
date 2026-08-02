@@ -238,6 +238,60 @@ function summarize_neighbors() {
 
 
 
+// otbr reports Rloc16 as a "0x%04x" string throughout. Older builds emitted a
+// bare number from routertable while neighbor and parent already used the
+// string form, so accept either: the page then works against a border router
+// that predates that being settled.
+function rloc_hex(value) {
+	if (value == null)
+		return null;
+	if (type(value) == 'string')
+		return lc(value);
+	return sprintf('0x%04x', value);
+}
+
+function summarize_routers() {
+	let s = otbr('state');
+	if (s.error)
+		return { error: s.error };
+	let state = s.State;
+	let result = { state: state, router: [], linked: 0 };
+
+	// Only a router or a leader keeps a router table: a child has none, and
+	// a disabled interface has no mesh at all. Report an empty list rather
+	// than an error, so the page can leave the section out entirely instead
+	// of showing an empty one.
+	if (state != 'router' && state != 'leader')
+		return result;
+
+	let t = otbr('routertable');
+	if (t.error)
+		return { error: t.error };
+
+	// This device appears in its own router table, carrying a zero path
+	// cost, zero link quality and zero age that would otherwise read as a
+	// dead router. Identify it by RLOC16 rather than by NextHop == 63,
+	// which is the invalid-router-id sentinel and also stands for "no
+	// route to this one".
+	let self = rloc_hex(otbr('rloc16').rloc16);
+
+	for (let r in (t.router_list ?? [])) {
+		// An unallocated router id is a free slot in the table, not a device.
+		if (!r.Allocated)
+			continue;
+		r.Rloc16 = rloc_hex(r.Rloc16);
+		if (self != null && r.Rloc16 == self)
+			r.Self = true;
+		else if (r.LinkEstablished)
+			result.linked++;
+		push(result.router, r);
+	}
+
+	return result;
+}
+
+
+
 return {
 	'luci.openthread': {
 		state_summary: {
@@ -256,6 +310,12 @@ return {
 			args: {},
 			call: function() {
 				return summarize_neighbors();
+			}
+		},
+		routers_summary: {
+			args: {},
+			call: function() {
+				return summarize_routers();
 			}
 		},
 		settings_get: {

@@ -16,6 +16,11 @@ var callNeighborsSummary = rpc.declare({
 	method: 'neighbors_summary'
 });
 
+var callRoutersSummary = rpc.declare({
+	object: 'luci.openthread',
+	method: 'routers_summary'
+});
+
 var callScan = rpc.declare({
 	object: 'luci.openthread',
 	method: 'scan'
@@ -1148,17 +1153,114 @@ function renderNeighborTable(neigh, st) {
 	return E('table', { 'class': 'table assoclist', 'id': 'neighbors' }, rows);
 }
 
+// Link quality is directional and frequently asymmetric, so both values are
+// shown rather than one averaged number. The icon follows the weaker of the
+// two, since that is what limits the link in practice.
+function lqiPairBadge(lqin, lqout, title) {
+	var a = num(lqin) ?? 0, b = num(lqout) ?? 0;
+	var pct = [0, 30, 60, 100][Math.min(a, b)] ?? 100;
+	return E('div', { 'class': 'ifacebadge', 'title': title, 'data-signal': pct }, [
+		E('img', { 'src': pctIcon(pct) }),
+		E('span', {}, [ ' ', 'LQI %d/%d'.format(a, b) ])
+	]);
+}
+
+// Whether this router is reached over its own radio link or through the mesh,
+// and what the routing cost to it is.
+//
+// PathCost is a cost, not a hop count, and the two must not be conflated: a
+// router can be directly linked and still cost more than one, because the cost
+// follows link quality. So the reachability comes from LinkEstablished and the
+// number is presented as the cost it is. Nor is an intermediate router named --
+// NextHop is OpenThread's routing state rather than the previous hop on a path,
+// and a directly linked router routinely reports some other router there.
+function routerPath(r) {
+	var cost = num(r.PathCost);
+	var how = r.LinkEstablished ? _('Direct') : _('Routed');
+	if (cost == null || cost < 1)
+		return how;
+	return E('span', {}, [ how, ' ', E('small', {}, _('(cost %d)').format(cost)) ]);
+}
+
+function renderRouterTable(rt) {
+	var rows = [E('tr', { 'class': 'tr table-titles' }, [
+		E('th', { 'class': 'th' }, _('Router')),
+		E('th', { 'class': 'th', 'title': _('Routing Locator: the mesh-internal short address encoding router and child id') }, _('RLOC16')),
+		E('th', { 'class': 'th hide-xs' }, _('Extended MAC')),
+		E('th', { 'class': 'th' }, _('Link quality (in / out)')),
+		E('th', { 'class': 'th' }, _('Path')),
+		E('th', { 'class': 'th' }, _('Age'))
+	])];
+
+	// This device first, then the mesh ordered by how far away it is.
+	var list = (rt.router || []).slice().sort(function(a, b) {
+		if (!!a.Self != !!b.Self)
+			return a.Self ? -1 : 1;
+		return (num(a.PathCost) ?? 99) - (num(b.PathCost) ?? 99)
+			|| (num(a.RouterId) ?? 0) - (num(b.RouterId) ?? 0);
+	});
+
+	list.forEach(function(r) {
+		// The device's own row carries zeroes for link quality, path cost and
+		// age, which would read as a dead router. Dash them out instead.
+		var quality = r.Self
+			? '—'
+			: r.LinkEstablished
+				? lqiPairBadge(r.LinkQualityIn, r.LinkQualityOut, _('Link quality to and from this router'))
+				: noSignalBadge(_('Not a direct radio neighbour'), false);
+
+		rows.push(E('tr', { 'class': 'tr' }, [
+			E('td', { 'class': 'td', 'data-title': _('Router') }, r.Self
+				? E('span', {}, [ String(r.RouterId ?? '?'), ' ',
+					E('small', {}, _('(this device)')) ])
+				: String(r.RouterId ?? '?')),
+			E('td', { 'class': 'td', 'data-title': _('RLOC16') }, [ r.Rloc16 || '?' ]),
+			E('td', { 'class': 'td hide-xs', 'data-title': _('Extended MAC') }, [ r.ExtAddress || '?' ]),
+			E('td', { 'class': 'td', 'data-title': _('Link quality (in / out)') }, quality),
+			E('td', { 'class': 'td', 'data-title': _('Path') }, r.Self ? '—' : routerPath(r)),
+			E('td', { 'class': 'td', 'data-title': _('Age') }, r.Self ? '—' : '%ds'.format(num(r.Age) ?? 0))
+		]));
+	});
+
+	if (rows.length == 1)
+		rows.push(E('tr', { 'class': 'tr placeholder' },
+			E('td', { 'class': 'td', 'colspan': 6 },
+				E('em', {}, _('No information available')))));
+
+	return E('table', { 'class': 'table assoclist', 'id': 'routers' }, rows);
+}
+
+// Only a router or a leader keeps a router table, so the whole section is
+// omitted otherwise rather than shown empty. The backend reports an empty
+// list in that case, which is also what a failed read looks like, so the
+// role is what decides.
+function renderRouterSection(rt) {
+	if (rt.state != 'router' && rt.state != 'leader')
+		return [];
+
+	var total = (rt.router || []).length;
+	var linked = rt.linked || 0;
+	return [
+		E('h3', {}, _('Mesh routers')),
+		E('div', { 'class': 'cbi-value-description' },
+			_('%d routers in the mesh, %d of them linked directly to this one.').format(total, linked)),
+		renderRouterTable(rt)
+	];
+}
+
 return view.extend({
 	load: function() {
 		return Promise.all([
 			callStateSummary(),
-			callNeighborsSummary()
+			callNeighborsSummary(),
+			callRoutersSummary()
 		]);
 	},
 
 	render: function(data) {
 		var st = data[0] || {};
 		var neigh = data[1] || {};
+		var rt = data[2] || {};
 
 		// A read that failed at the ubus layer carries an error instead of
 		// state; surface it rather than rendering an empty overview.
@@ -1167,6 +1269,7 @@ return view.extend({
 		var tbody = E('tbody', { 'class': 'tbody cbi-section-tbody' }, renderTableRows(st, neigh));
 		var neighborsBox = E('div', { 'id': 'thread-neighbors' }, renderNeighborTable(neigh, st));
 		var leaderBox = E('div', { 'id': 'thread-leader' }, renderLeaderTable(st));
+		var routersBox = E('div', { 'class': 'cbi-section', 'id': 'thread-routers' }, renderRouterSection(rt));
 
 		// h3 section titles inside cbi-sections, matching the wireless page's
 		// heading hierarchy.
@@ -1186,14 +1289,16 @@ return view.extend({
 					actionButton(_('Commission device\u2026'), 'cbi-button cbi-button-add',
 						function() { return handleCommission(st); },
 						_('Admit a new device into this Thread network (commissioner-based joining)')))
-			])
+			]),
+			routersBox
 		]);
 
 		poll.add(L.bind(function() {
-			return Promise.all([callStateSummary(), callNeighborsSummary()]).then(function(d) {
+			return Promise.all([callStateSummary(), callNeighborsSummary(), callRoutersSummary()]).then(function(d) {
 				dom.content(tbody, renderTableRows(d[0] || {}, d[1] || {}));
 				dom.content(neighborsBox, renderNeighborTable(d[1] || {}, d[0] || {}));
 				dom.content(leaderBox, renderLeaderTable(d[0] || {}));
+				dom.content(routersBox, renderRouterSection(d[2] || {}));
 			});
 		}, this), 2);
 
