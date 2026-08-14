@@ -72,11 +72,36 @@ return network.registerProtocol('openthread', {
 		o.rmempty = false;
 		o.placeholder = 'wpan0';
 
+		o = s.taboption('general', form.Value, 'rcp',
+			_('Radio device'),
+			_('The RCP dongle: "any" picks a USB device that names OpenThread in its product string, a bus position like "2-1" pins one device regardless of its name, and a /dev path uses a fixed serial device.'));
+		o.optional = true;
+		o.placeholder = 'any';
+		o.value('any', _('any (discover by product string)'));
+
 		o = s.taboption('general', form.Value, 'radio_url',
 			_('Radio URL'),
-			_('How otbr-agent reaches the 802.15.4 radio.'));
-		o.rmempty = false;
+			_('How otbr-agent reaches the 802.15.4 radio. Overrides the radio device selection; leave empty to use it.'));
+		o.optional = true;
 		o.placeholder = 'spinel+hdlc+uart:///dev/ttyACM0?uart-baudrate=460800';
+
+		o = s.taboption('advanced', form.Value, 'uart_baudrate',
+			_('UART baud rate'),
+			_('Leave empty for the radio firmware\'s default.'));
+		o.optional = true;
+		o.datatype = 'uinteger';
+		o.placeholder = '460800';
+
+		o = s.taboption('advanced', form.Flag, 'uart_flow_control',
+			_('UART flow control'));
+		o.optional = true;
+		o.default = '1';
+
+		o = s.taboption('advanced', form.Flag, 'rcp_firmware_update',
+			_('Update RCP firmware'),
+			_('Install or update the radio firmware through handler plugins when one recognises the device. Off unless requested: flashing is an explicit act.'));
+		o.optional = true;
+		o.default = '0';
 
 		o = s.taboption('advanced', form.Value, 'dataset',
 			_('Operational dataset'),
